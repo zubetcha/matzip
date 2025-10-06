@@ -4,6 +4,7 @@ import {createStaticNavigation} from '@react-navigation/native';
 import AuthHomeScreen from '../screens/auth/AuthHomeScreen';
 import LoginScreen from '../screens/auth/LoginScreen';
 import SignupScreen from '../screens/auth/SignupScreen';
+import {COLORS} from '../constants/colors';
 
 const AuthStack = createStackNavigator({
     screens: {
@@ -29,10 +30,10 @@ const AuthStack = createStackNavigator({
     screenOptions: {
         headerTitleAlign: 'center',
         headerBackButtonDisplayMode: 'minimal',
-        headerTintColor: 'black',
+        headerTintColor: COLORS.BLACK,
         headerStyle: {
-            backgroundColor: 'white',
-            shadowColor: 'gray',
+            backgroundColor: COLORS.WHITE,
+            shadowColor: COLORS.GRAY_300,
             shadowOffset: {width: 0, height: 2},
             shadowOpacity: 0.25,
             shadowRadius: 3.84,
