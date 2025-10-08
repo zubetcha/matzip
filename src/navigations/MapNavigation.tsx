@@ -1,8 +1,8 @@
-import {createStackNavigator} from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import MapHomeScreen from '../screens/map/MapHomeScreen';
 import AddLocationScreen from '../screens/map/AddLocationScreen';
 import SearchLocationScreen from '../screens/map/SearchLocationScreen';
-import {COLORS} from '../constants/colors';
+import { COLORS } from '../constants/colors';
 
 const MapStack = createStackNavigator({
     screens: {
@@ -26,7 +26,7 @@ const MapStack = createStackNavigator({
         headerStyle: {
             backgroundColor: COLORS.WHITE,
             shadowColor: COLORS.GRAY_300,
-            shadowOffset: {width: 0, height: 2},
+            shadowOffset: { width: 0, height: 2 },
             shadowOpacity: 0.25,
             shadowRadius: 3.84,
             elevation: 5,
